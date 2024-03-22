@@ -84,6 +84,7 @@ Note:
 - Using `guiding-immortal-sunbeam.ngrok-free.app` as pre-configured domain name.
 - `https://aap-rhel-92-1.lab.local` is my local URL of Ansible controller.
 
+
 ## Troubleshooting
 
 ```shell
