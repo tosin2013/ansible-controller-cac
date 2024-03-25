@@ -129,6 +129,7 @@ controller_settings_individuale:
   - name: LOG_AGGREGATOR_USERNAME
     value: ""
 
+
   # - name: LOG_AGGREGATOR_PASSWORD
   #   value: ""
 
