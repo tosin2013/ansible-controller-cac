@@ -118,7 +118,7 @@ controller_settings_individuale:
 
 # --- Logging ---
   - name: LOG_AGGREGATOR_HOST
-    value: "https://192.168.57.11:8088/services/collector/event"
+    value: "https://192.168.57.1:8088/services/collector/event"
 
   - name: LOG_AGGREGATOR_PORT
     value: null
@@ -139,7 +139,7 @@ controller_settings_individuale:
     value: false
 
   - name: LOG_AGGREGATOR_ENABLED
-    value: true
+    value: false
 
   - name: LOG_AGGREGATOR_PROTOCOL
     value: "https"
@@ -151,7 +151,8 @@ controller_settings_individuale:
     value: false
 
   - name: LOG_AGGREGATOR_LEVEL
-    value: "INFO"
+    value: "DEBUG"
+    # DEBUG, WARNING, INFO
 
   - name: API_400_ERROR_LOG_FORMAT
     value: "status {status_code} received by user {user_name} attempting to access {url_path} from {remote_addr}"
