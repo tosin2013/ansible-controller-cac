@@ -116,4 +116,41 @@ controller_settings_individuale:
     # value: "{u'is_superuser': ['cn=sat-qe-infra,ou=adhoc,ou=managedGroups,dc=example,dc=com']}"
   # This maps all users to satellite-qe org and makes sure they are not part of satlab-admin
 
+# --- Logging ---
+  - name: LOG_AGGREGATOR_HOST
+    value: "https://192.168.57.1:8088/services/collector/event"
+
+  - name: LOG_AGGREGATOR_PORT
+    value: null
+
+  - name: LOG_AGGREGATOR_TYPE
+    value: "splunk"
+
+  - name: LOG_AGGREGATOR_USERNAME
+    value: ""
+
+  # - name: LOG_AGGREGATOR_PASSWORD
+  #   value: ""
+
+
+    # "LOG_AGGREGATOR_LOGGERS": [
+    #     "awx",
+    #     "activity_stream",
+    #     "job_events",
+    #     "system_tracking",
+    #     "broadcast_websocket"
+    # ],
+    # "LOG_AGGREGATOR_INDIVIDUAL_FACTS": false,
+    # "LOG_AGGREGATOR_ENABLED": true,
+    # "LOG_AGGREGATOR_TOWER_UUID": "",
+    # "LOG_AGGREGATOR_PROTOCOL": "https",
+    # "LOG_AGGREGATOR_TCP_TIMEOUT": 10,
+    # "LOG_AGGREGATOR_VERIFY_CERT": false,
+    # "LOG_AGGREGATOR_LEVEL": "INFO",
+    # "LOG_AGGREGATOR_MAX_DISK_USAGE_GB": 1,
+    # "LOG_AGGREGATOR_ACTION_MAX_DISK_USAGE_GB": 1,
+    # "LOG_AGGREGATOR_MAX_DISK_USAGE_PATH": "/var/lib/awx",
+    # "LOG_AGGREGATOR_RSYSLOGD_DEBUG": false,
+    # "API_400_ERROR_LOG_FORMAT": "status {status_code} received by user {user_name} attempting to access {url_path} from {remote_addr}"
+
 ...

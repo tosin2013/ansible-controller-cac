@@ -76,7 +76,14 @@ Step 3. Continue the CaC configuration with the remaining tags: `projects`, `inv
 Since the Ansible controller is running locally (on workstation my lab setup), I need to create tunnel (using [ngrok](https://ngrok.com/) here) so that GitHub can reach my Ansible controller over internet.
 
 ```shell
-$ podman run --net=host -it -e NGROK_AUTHTOKEN=YourNgrokTOken ngrok/ngrok:latest http https://aap-rhel-92-1.lab.local --domain=your-ngrok-domain-name
+export NGROK_AUTH_TOKEN=Your-Authtoken
+export NGROK_CUSTOM_DOMAIN=Your-custom-domain
+
+$ podman run --net=host -it \
+  -e NGROK_AUTHTOKEN=$NGROK_AUTH_TOKEN \
+  ngrok/ngrok:latest \
+  http https://aap-rhel-92-1.lab.local \
+  --domain=$NGROK_CUSTOM_DOMAIN
 ```
 
 Note:
