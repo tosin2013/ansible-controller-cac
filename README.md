@@ -2,7 +2,7 @@
 
 This Ansible playbooks and roles allows for easy interaction with an Ansible Controller server via Ansible roles using the Controller collection modules.
 
-> ⚠️ **Note:** AAP Version Dependency.
+> ⚠️ **Important Note:** AAP Version Dependency.
 >
 > Be sure to use [`ansible.controller 4.5.12`](https://console.redhat.com/ansible/automation-hub/repo/published/ansible/controller/) for AAP 2.4
 >
