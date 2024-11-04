@@ -2,6 +2,15 @@
 
 This Ansible playbooks and roles allows for easy interaction with an Ansible Controller server via Ansible roles using the Controller collection modules.
 
+> ⚠️ **Note:** AAP Version Dependency.
+>
+> Be sure to use [`ansible.controller 4.5.12`](https://console.redhat.com/ansible/automation-hub/repo/published/ansible/controller/) for AAP 2.4
+>
+> Be sure to use [`infra.aap_configuration`](https://galaxy.ansible.com/ui/repo/published/infra/aap_configuration/) for AAP 2.5
+>
+
+
+
 ## What is Configuration as Code (CaC) in Ansible Automation Platform?
 
 CaC is a term generally referring to the separation of configuration settings from the actual code. The ideal being you can store that configuration data in source control, and easily run and tweak it to match different environments.
