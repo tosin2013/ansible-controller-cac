@@ -6,8 +6,17 @@ This Ansible playbooks and roles allows for easy interaction with an Ansible Con
 >
 > Be sure to use [`ansible.controller 4.5.12`](https://console.redhat.com/ansible/automation-hub/repo/published/ansible/controller/) for AAP 2.4
 >
-> Be sure to use [`infra.aap_configuration`](https://galaxy.ansible.com/ui/repo/published/infra/aap_configuration/) for AAP 2.5
+> 4.6.x is for AAP 2.5.
 >
+> Use the new collection [`infra.aap_configuration`](https://galaxy.ansible.com/ui/repo/published/infra/aap_configuration/) for AAP 2.5
+>
+> - [awx.awx/Ansible.controller](https://github.com/ansible/awx/tree/devel/awx_collection):	Automation controller modules
+> - [Ansible Hub Configuration](https://github.com/ansible/automation_hub_collection):	Automation hub configuration
+> - [infra.aap_configuration](https://github.com/redhat-cop/infra.aap_configuration) (formerely Controller Configuration):	Automation controller configuration
+> - [EE Utilities](https://github.com/redhat-cop/ee_utilities): Execution Environment creation utilities
+> - [AAP installation Utilities](https://github.com/redhat-cop/aap_utilities):	Ansible Automation Platform Utilities
+> - [AAP Configuration Template](https://github.com/redhat-cop/aap_configuration_template):	Configuration Template for this suite
+
 
 
 
