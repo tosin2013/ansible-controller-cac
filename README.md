@@ -6,7 +6,7 @@ This Ansible playbooks and roles allows for easy interaction with an Ansible Con
 >
 > Be sure to use [`ansible.controller 4.5.12`](https://console.redhat.com/ansible/automation-hub/repo/published/ansible/controller/) for AAP 2.4
 >
-> 4.6.x is for AAP 2.5.
+> [4.6.x](https://console.redhat.com/ansible/automation-hub/repo/published/ansible/controller/) is for AAP 2.5.
 >
 > Use the new collection [`infra.aap_configuration`](https://galaxy.ansible.com/ui/repo/published/infra/aap_configuration/) for AAP 2.5
 >
