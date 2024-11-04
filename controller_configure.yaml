@@ -11,7 +11,7 @@
   #   # - awx.awx
   #   - ansible.controller
   tasks:
-    - name: Include vars from configs directory - {{ controller_configs_dir | basename }}
+    - name: Include vars from configs directory - {{ aap_configs_dir | basename }}
       ansible.builtin.include_vars:
         dir: "{{ controller_configs_dir }}"
         # ignore_files: [controller_config.yml.template]
@@ -156,7 +156,7 @@
       tags:
         - workflows
 
-    - name: Add Roles 
+    - name: Add Roles
       ansible.builtin.include_role:
         name: controller-roles
         apply:
@@ -167,7 +167,7 @@
       tags:
         - roles
 
-    - name: Add Instance Groups 
+    - name: Add Instance Groups
       ansible.builtin.include_role:
         name: controller-instance_groups
         apply:

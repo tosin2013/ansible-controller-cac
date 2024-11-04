@@ -2,10 +2,13 @@
 - name: Playbook to configure ansible controller post installation
   hosts: localhost
   connection: local
+  vars_files:
+    - vars/general.yaml
+    # - vars/controller_configuration_control.yaml
   tasks:
     - name: Include vars from configs directory
       ansible.builtin.include_vars:
-        dir: "{{ aap_configs_dir | default((lookup('env', 'AAP_CONFIGS_DIR') == '') | ternary('./configs', lookup('env', 'AAP_CONFIGS_DIR'))) }}"
+        dir: "{{ controller_configs_dir | default((lookup('env', 'AAP_CONFIGS_DIR') == '') | ternary('./configs', lookup('env', 'AAP_CONFIGS_DIR'))) }}"
         ignore_files: [controller_config.yml.template]
         extensions: ["yml", "yaml"]
       tags:

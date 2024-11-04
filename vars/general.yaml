@@ -5,4 +5,5 @@ controller_hostname: "{{ vault_controller_hostname | default(lookup('env', 'CONT
 
 export_dir: controller_config_export
 
-controller_configs_dir: controller_config_dev
+controller_configs_dir: cac_sample
+controller_dependency_check: false
