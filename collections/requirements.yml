@@ -1,0 +1,12 @@
+---
+collections:
+  - name: ansible.controller
+    version: 4.6.2
+    source: published
+    # source: https://console.redhat.com/api/automation-hub/content/published/
+  # - name: ansible.eda
+  - name: infra.controller_configuration
+    source: https://galaxy.ansible.com
+  # - name: ansible.platform
+  # - name: ansible.hub
+  # - name: ansible.eda
