@@ -14,4 +14,9 @@ controller_organizations:
     max_hosts: 0
     description: Configuration as Code - Demo
     custom_virtualenv: []
+
+  - name: Network-Ops
+    max_hosts: 100
+    description: Configuration as Code - Demo
+    custom_virtualenv: []
 ...
