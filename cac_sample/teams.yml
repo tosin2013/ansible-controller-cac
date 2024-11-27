@@ -9,6 +9,6 @@ controller_teams:
   - name: cac-admins
     organization: XYZCorp-CaC
 
-  - name: network-admin
+  - name: network-admins
     organization: Network-Ops
 ...
