@@ -39,6 +39,12 @@ controller_settings_individuale:
               "admins": "CN=ansible_admins,OU=AAP,DC=example,DC=com",
               "remove_users": false,
               "remove_admins": false
+            },
+            "Network-Ops": {
+              "users": true,
+              "admins": "CN=network_admins,OU=AAP,DC=example,DC=com",
+              "remove_users": false,
+              "remove_admins": false
             }
           }'
 
