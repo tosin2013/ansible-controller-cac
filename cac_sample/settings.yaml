@@ -62,6 +62,11 @@ controller_settings_individuale:
               "users": "cn=ansible_operators,ou=AAP,dc=example,dc=com",
               "remove": true,
               "organization": "XYZCorp-CaC"
+            },
+            "network-admin": {
+              "users": "cn=network_admins,ou=AAP,dc=example,dc=com",
+              "remove": true,
+              "organization": "Network-Ops"
             }
           }'
   # - name: AUTH_LDAP_REQUIRE_GROUP
