@@ -63,7 +63,7 @@ controller_settings_individuale:
               "remove": true,
               "organization": "XYZCorp-CaC"
             },
-            "network-admin": {
+            "network-admins": {
               "users": "cn=network_admins,ou=AAP,dc=example,dc=com",
               "remove": true,
               "organization": "Network-Ops"
