@@ -1,5 +1,5 @@
 ---
-controller_instance_groups_beta:
+controller_instance_groups:
   - name: instance-group-CaC
 
   - name: Container-Group-CaC
