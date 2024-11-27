@@ -18,8 +18,6 @@ This Ansible playbooks and roles allows for easy interaction with an Ansible Con
 > - [AAP Configuration Template](https://github.com/redhat-cop/aap_configuration_template):	Configuration Template for this suite
 
 
-
-
 ## What is Configuration as Code (CaC) in Ansible Automation Platform?
 
 CaC is a term generally referring to the separation of configuration settings from the actual code. The ideal being you can store that configuration data in source control, and easily run and tweak it to match different environments.
