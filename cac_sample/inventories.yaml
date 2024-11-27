@@ -5,5 +5,9 @@ controller_inventories:
     organization: Cac-Demo-Org
     description: Created by Ansible CaC
     prevent_instance_group_fallback: false
-...
 
+  - name: NetOps-Inventory
+    organization: Network-Ops
+    description: Created by Ansible CaC
+    prevent_instance_group_fallback: false
+...

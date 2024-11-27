@@ -67,6 +67,11 @@ controller_settings_individuale:
               "users": "cn=network_admins,ou=AAP,dc=example,dc=com",
               "remove": true,
               "organization": "Network-Ops"
+            },
+            "network-operators": {
+              "users": "cn=network_operators,ou=AAP,dc=example,dc=com",
+              "remove": true,
+              "organization": "Network-Ops"
             }
           }'
   # - name: AUTH_LDAP_REQUIRE_GROUP

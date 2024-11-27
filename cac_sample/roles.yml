@@ -83,6 +83,9 @@ controller_roles:
     team: network-admins
     role: approval
 
+  - organization: Network-Ops
+    team: network-operators
+    role: execute
 
 # admin, read, member, execute, adhoc, update, use, approval, auditor, project_admin, inventory_admin, credential_admin, workflow_admin, notification_admin, job_template_admin, execution_environment_admin, got: project_admin_role",
 ...
