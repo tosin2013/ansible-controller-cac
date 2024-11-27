@@ -41,7 +41,7 @@ controller_roles:
   # Multi tenancy example
   - organization: Network-Ops
     team: network-admin
-    role: project_admin_role
+    role: admin
 
 
 ...
