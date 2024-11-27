@@ -41,9 +41,48 @@ controller_roles:
   # Multi tenancy example:  network-admin as the org admin for Network-Ops
   - organization: Network-Ops
     team: network-admin
+    role: execute
+
+  - organization: Network-Ops
+    team: network-admin
     role: project_admin
 
   - organization: Network-Ops
     team: network-admin
-    role: project_admin_role
+    role: inventory_admin
+
+  - organization: Network-Ops
+    team: network-admin
+    role: credential_admin
+
+  - organization: Network-Ops
+    team: network-admin
+    role: workflow_admin
+
+  - organization: Network-Ops
+    team: network-admin
+    role: notification_admin
+
+  - organization: Network-Ops
+    team: network-admin
+    role: job_template_admin
+
+  - organization: Network-Ops
+    team: network-admin
+    role: execution_environment_admin
+
+  - organization: Network-Ops
+    team: network-admin
+    role: auditor
+
+  - organization: Network-Ops
+    team: network-admin
+    role: read
+
+  - organization: Network-Ops
+    team: network-admin
+    role: approval
+
+
+# admin, read, member, execute, adhoc, update, use, approval, auditor, project_admin, inventory_admin, credential_admin, workflow_admin, notification_admin, job_template_admin, execution_environment_admin, got: project_admin_role",
 ...
