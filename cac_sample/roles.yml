@@ -38,10 +38,12 @@ controller_roles:
     team: cac-team-102
     role: execute
 
-  # Multi tenancy example
+  # Multi tenancy example:  network-admin as the org admin for Network-Ops
   - organization: Network-Ops
     team: network-admin
     role: project_admin
 
-
+  - organization: Network-Ops
+    team: network-admin
+    role: project_admin_role
 ...
