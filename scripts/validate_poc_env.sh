@@ -43,7 +43,7 @@ if [ $missing_vars -gt 0 ]; then
 fi
 
 # Check required tools
-required_tools=("ansible" "ansible-playbook" "oc" "git" "curl")
+required_tools=("ansible" "ansible-playbook" "oc" "git" "curl" "ansible-galaxy")
 missing_tools=0
 
 echo -e "\nChecking required tools..."
@@ -109,7 +109,7 @@ fi
 
 # Check configuration files
 echo -e "\nChecking configuration files..."
-required_files=("configure_aap.yml" "vars/general.yaml" "vars/controller_configuration_control.yaml")
+required_files=("configure_aap.yml" "vars/general.yaml" "vars/controller_configuration_control.yaml" "requirements.yml")
 missing_files=0
 
 for file in "${required_files[@]}"; do
@@ -123,6 +123,49 @@ done
 
 if [ $missing_files -gt 0 ]; then
     echo -e "\n${RED}Error: Missing required files${NC}"
+    exit 1
+fi
+
+# Check and install required collections
+echo -e "\nChecking Ansible collections..."
+if [ -f "requirements.yml" ]; then
+    echo -e "${YELLOW}Installing required collections from requirements.yml...${NC}"
+    # Create collections directory if it doesn't exist
+    mkdir -p collections
+    if ANSIBLE_COLLECTIONS_PATH="./collections" ansible-galaxy collection install -r requirements.yml; then
+        echo -e "${GREEN}✓ Collections installed successfully${NC}"
+    else
+        echo -e "${RED}✗ Failed to install collections${NC}"
+        exit 1
+    fi
+else
+    echo -e "${RED}✗ requirements.yml not found${NC}"
+    exit 1
+fi
+
+# Check if collections are installed
+echo -e "\nVerifying installed collections..."
+required_collections=(
+    "awx.awx"
+    "infra.controller_configuration"
+    "community.kubernetes"
+    "community.general"
+    "ansible.utils"
+    "ansible.posix"
+)
+missing_collections=0
+
+for collection in "${required_collections[@]}"; do
+    if ANSIBLE_COLLECTIONS_PATH="./collections" ansible-galaxy collection list | grep -q "$collection"; then
+        echo -e "${GREEN}✓ $collection is installed${NC}"
+    else
+        echo -e "${RED}✗ $collection is missing${NC}"
+        missing_collections=$((missing_collections + 1))
+    fi
+done
+
+if [ $missing_collections -gt 0 ]; then
+    echo -e "\n${RED}Error: Missing required collections${NC}"
     exit 1
 fi
 
