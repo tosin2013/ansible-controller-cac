@@ -35,6 +35,18 @@ You can use CaC with a GitOps approach to help replicate configurations across a
 
 3. Credential to the Ansible Automation Controller
 
+## Architectural Decision Records (ADRs)
+
+This project uses ADRs to document important architectural decisions. The following ADRs are available:
+
+- [ADR-000: Repository Structure and Organization](docs/ADR-000-repository-structure.md) - Documents the overall repository structure and organization.
+- [ADR-001: Configuration as Code Implementation](docs/ADR-001-configuration-as-code-implementation.md) - Details the CaC implementation approach and patterns.
+- [ADR-002: Security and Credential Management](docs/ADR-002-security-and-credential-management.md) - Outlines security practices and credential handling.
+- [ADR-003: Configuration Validation Strategy](docs/ADR-003-configuration-validation-strategy.md) - Describes the validation approach for configurations.
+- [ADR-004: Role-Based Architecture](docs/ADR-004-role-based-architecture.md) - Explains the role-based architecture design.
+
+Each ADR provides detailed context, decisions made, consequences, and implementation notes for key architectural aspects of this project.
+
 ## How to use this playbook
 
 The `controller_configure.yaml` can be executed using `ansible-playbook`, `ansible-navigator` or using a Job template from **Ansible controller** itself.
