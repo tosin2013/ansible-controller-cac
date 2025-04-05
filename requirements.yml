@@ -1,4 +1,28 @@
 ---
 collections:
-  # - name: infra.controller_configuration
-    # version: ...
+  # Controller collections (community version)
+  - name: awx.awx
+    version: ">=21.0.0"  # Latest stable version compatible with AAP 2.5
+    source: https://galaxy.ansible.com
+  
+  # Controller configuration collection
+  - name: infra.controller_configuration
+    version: ">=2.0.0"
+    source: https://galaxy.ansible.com
+  
+  # Kubernetes collections (community versions)
+  - name: community.kubernetes
+    version: ">=2.0.0"
+    source: https://galaxy.ansible.com
+  
+  # Additional utility collections
+  - name: community.general
+    version: ">=6.0.0"
+    source: https://galaxy.ansible.com
+
+  # Additional required collections for AAP configuration
+  - name: ansible.utils
+    source: https://galaxy.ansible.com
+
+  - name: ansible.posix
+    source: https://galaxy.ansible.com
