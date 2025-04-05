@@ -57,7 +57,7 @@ fi
 echo -e "\n🔧 Setting up environment variables..."
 export CONTROLLER_HOST="ansible-controller-aap.apps.ansible-cluster.sandbox2641.opentlc.com"
 export CONTROLLER_USERNAME="admin"
-export CONTROLLER_PASSWORD="vJ064m0NP0QUFpBPN3BwCWgGvp7uTJ6B"
+export CONTROLLER_PASSWORD="hvggvgvgv"
 export KUBECONFIG="/home/lab-user/cluster/auth/kubeconfig"
 print_status "Environment variables set"
 
